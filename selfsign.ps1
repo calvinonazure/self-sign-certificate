@@ -45,4 +45,7 @@ Add-Content ".\cafile.crt" $interContent
 Write-Host "Packaging PFX"
 openssl pkcs12 -export -passout "pass:$password" -out client.pfx -inkey client.key -in client.crt -CAfile cafile.crt
 
+Write-Host "Convert pfx to pem"
+openssl pkcs12 -in client.pfx -out client.pem -nodes -passin "pass:$password"
+
 cd "$scriptPath"
