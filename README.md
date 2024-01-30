@@ -5,6 +5,8 @@ Generate a self-signed certificate with OpenSSL
 The scripts will use the openssl to generate self signed certificate, this tool should already installed in Windows 10 machine. 
 In case you don't have the tool, try to install it from https://www.openssl.org/
 
+If you installed Git client, you could also refer page https://stackoverflow.com/questions/50625283/how-to-install-openssl-in-windows-10 to find ssl exe file from `C:\Program Files\Git\usr\bin\openssl.exe`
+
 ## Scripts
 
 1. selfsign.ps1
